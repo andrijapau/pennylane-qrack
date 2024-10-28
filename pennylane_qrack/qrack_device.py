@@ -654,6 +654,8 @@ class QrackDevice(QubitDevice):
                 "when using sample-based measurements."
             )
 
+        print(self.shots)
+
         if self.shots == 1:
             rev_sample = self._state.m_all()
             sample = 0
